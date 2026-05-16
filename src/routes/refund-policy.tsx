@@ -1,0 +1,199 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { LegalPage } from "../components/legal-page";
+
+export const Route = createFileRoute("/refund-policy")({
+  component: RefundPolicyPage,
+});
+
+function RefundPolicyPage() {
+  return (
+    <LegalPage title="Cancellation & Refund Policy" lastUpdated="16 May 2026">
+      <section>
+        <p>
+          This Cancellation & Refund Policy applies to all services provided by
+          Shareef Solutions (&quot;Company,&quot; &quot;we,&quot; &quot;us,&quot;
+          or &quot;our&quot;), located at Talab Katta, Bhavani Nagar, Hyderabad,
+          Telangana, India. This policy is governed by the Consumer Protection
+          Act, 2019 and applicable Indian laws.
+        </p>
+      </section>
+
+      <section>
+        <h2>1. Refund Eligibility</h2>
+        <p>
+          We offer a <strong>full refund within 7 calendar days</strong> from the
+          date of payment, subject to the conditions outlined below. Our goal is
+          to ensure complete client satisfaction with every engagement.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. Full Refund Conditions</h2>
+        <p>A full refund will be granted if:</p>
+        <ul>
+          <li>
+            The refund request is made within 7 calendar days from the date of
+            payment.
+          </li>
+          <li>
+            Work on the project has not substantially commenced or no
+            deliverables have been provided.
+          </li>
+          <li>
+            The request is submitted in writing via email to{" "}
+            <a href="mailto:nadeemshareef934@gmail.com">
+              nadeemshareef934@gmail.com
+            </a>
+            .
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. Partial Refund Conditions</h2>
+        <p>
+          If significant work has been started or partial deliverables have been
+          provided within the 7-day window, a partial refund may be issued:
+        </p>
+        <ul>
+          <li>
+            The refund amount will be calculated by deducting the value of work
+            already completed from the total amount paid.
+          </li>
+          <li>
+            A detailed breakdown of the work completed and the refund amount will
+            be provided to the client.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. Non-Refundable Scenarios</h2>
+        <p>Refunds will not be issued in the following cases:</p>
+        <ul>
+          <li>
+            The refund request is made after 7 calendar days from the date of
+            payment.
+          </li>
+          <li>
+            The project has been fully completed and all deliverables have been
+            handed over.
+          </li>
+          <li>
+            The client has approved and accepted the delivered work in writing.
+          </li>
+          <li>
+            Non-payment of dues for work already performed by Shareef Solutions.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. Cancellation Policy</h2>
+        <p>
+          Either party may cancel a project engagement at any time by providing
+          written notice via email. Upon cancellation:
+        </p>
+        <ul>
+          <li>
+            <strong>Client-initiated cancellation:</strong> The client shall pay
+            for all work completed up to the date of cancellation. Any remaining
+            balance from advance payments will be refunded.
+          </li>
+          <li>
+            <strong>Company-initiated cancellation:</strong> If Shareef
+            Solutions cancels the project, a full refund of any payments for
+            undelivered work will be issued.
+          </li>
+          <li>
+            All completed deliverables will be transferred to the client upon
+            settlement of outstanding dues.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. How to Request a Refund</h2>
+        <p>To initiate a refund or cancellation, please follow these steps:</p>
+        <ul>
+          <li>
+            Send an email to{" "}
+            <a href="mailto:nadeemshareef934@gmail.com">
+              nadeemshareef934@gmail.com
+            </a>{" "}
+            with the subject line &quot;Refund Request&quot; or &quot;Cancellation
+            Request.&quot;
+          </li>
+          <li>
+            Include your full name, project details, payment date, and reason for
+            the request.
+          </li>
+          <li>
+            Our team will acknowledge your request within 2 business days.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>7. Refund Processing Timeline</h2>
+        <ul>
+          <li>
+            Approved refunds will be processed within{" "}
+            <strong>5–10 business days</strong> from the date of approval.
+          </li>
+          <li>
+            Refunds will be credited to the original payment method used at the
+            time of purchase.
+          </li>
+          <li>
+            Bank processing times may vary, and the refund may take additional
+            time to reflect in your account.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>8. Dispute Resolution</h2>
+        <p>
+          If you are unsatisfied with the resolution of your refund or
+          cancellation request, you may escalate the matter by contacting us
+          directly. We are committed to resolving disputes amicably. Any
+          unresolved disputes shall be subject to the exclusive jurisdiction of
+          the courts in Hyderabad, Telangana, India, in accordance with Indian
+          law.
+        </p>
+      </section>
+
+      <section>
+        <h2>9. Changes to This Policy</h2>
+        <p>
+          We reserve the right to modify this Cancellation & Refund Policy at any
+          time. Changes will be effective immediately upon posting to our
+          website. The &quot;Last Updated&quot; date at the top of this page
+          reflects the most recent revision.
+        </p>
+      </section>
+
+      <section>
+        <h2>10. Contact Us</h2>
+        <p>
+          For any questions or concerns regarding this policy, please contact us:
+        </p>
+        <ul>
+          <li>
+            Email:{" "}
+            <a href="mailto:nadeemshareef934@gmail.com">
+              nadeemshareef934@gmail.com
+            </a>
+          </li>
+          <li>
+            Phone: <a href="tel:+917815837564">+91 7815837564</a>
+          </li>
+          <li>
+            Address: Talab Katta, Bhavani Nagar, Hyderabad, Telangana, India
+          </li>
+        </ul>
+      </section>
+    </LegalPage>
+  );
+}

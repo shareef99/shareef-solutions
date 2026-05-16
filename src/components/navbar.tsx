@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "@tanstack/react-router";
 
 const links = [
   { label: "Home", href: "#home" },
@@ -25,12 +26,12 @@ export function Navbar() {
       aria-label="Main navigation"
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a
-          href="#home"
+        <Link
+          to="/"
           className="text-xl font-bold text-gray-900 dark:text-white"
         >
           Shareef<span className="text-green-600"> Solutions</span>
-        </a>
+        </Link>
 
         <div className="hidden items-center gap-8 md:flex">
           {links.map((link) => (

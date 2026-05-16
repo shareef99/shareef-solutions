@@ -64,7 +64,16 @@ export function ContactSection() {
           </div>
 
           <form
-            onSubmit={(e) => e.preventDefault()}
+            onSubmit={(e) => {
+              e.preventDefault();
+              const form = e.currentTarget;
+              const name = (form.elements.namedItem("name") as HTMLInputElement).value;
+              const email = (form.elements.namedItem("email") as HTMLInputElement).value;
+              const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value;
+              const subject = encodeURIComponent(`Inquiry from ${name}`);
+              const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+              window.location.href = `mailto:nadeemshareef934@gmail.com?subject=${subject}&body=${body}`;
+            }}
             className="space-y-6 rounded-2xl border border-gray-200 bg-gray-50 p-8 dark:border-gray-800 dark:bg-gray-900"
           >
             <div>
