@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Shareef Solutions">
+  <defs>
+    <linearGradient id="g" x1="0" y1="64" x2="64" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#16a34a" />
+      <stop offset="1" stop-color="#34d399" />
+    </linearGradient>
+    <path id="s" d="M44 23 C 44 16, 33 14, 26 18 C 19 22, 22 29, 31 31 C 40 33, 43 40, 36 45 C 29 49, 19 47, 19 40" />
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#g)" />
+  <use href="#s" transform="translate(26 27) scale(0.5) translate(-31.5 -31.5)" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity="0.92" />
+  <use href="#s" transform="translate(39 37) scale(0.5) translate(-31.5 -31.5)" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
