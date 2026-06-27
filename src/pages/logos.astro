@@ -96,42 +96,46 @@ const round3 = [
 const gradText =
   "bg-gradient-to-r from-green-600 to-emerald-400 bg-clip-text text-transparent";
 
+// NOTE: inner sizing/weight/tracking use inline styles (not Tailwind utilities)
+// because class names that live only inside these strings aren't picked up by
+// Tailwind's scanner. The gradient `gradText` class IS used as a real attribute
+// elsewhere on the page, so it is generated and safe to reuse here.
 const wordmarks = [
   {
     name: "Q · Full gradient",
     desc: "Whole wordmark in the gradient — geometric Poppins.",
     font: "'Poppins', sans-serif",
-    html: `<span class="text-3xl font-bold ${gradText}">Shareef Solutions</span>`,
+    html: `<span class="${gradText}" style="font-size:30px;font-weight:700">Shareef Solutions</span>`,
   },
   {
     name: "R · Stacked",
     desc: "“Shareef” over a spaced, uppercase “Solutions” — Sora.",
     font: "'Sora', sans-serif",
-    html: `<span class="flex flex-col leading-none"><span class="text-3xl font-extrabold">Shareef</span><span class="mt-1 text-sm font-semibold uppercase tracking-[0.4em] ${gradText}">Solutions</span></span>`,
+    html: `<span style="display:flex;flex-direction:column;line-height:1"><span style="font-size:30px;font-weight:800">Shareef</span><span class="${gradText}" style="margin-top:4px;font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:0.4em">Solutions</span></span>`,
   },
   {
     name: "S · Tagline lockup",
     desc: "Wordmark with a small tracked tagline — Plus Jakarta Sans.",
     font: "'Plus Jakarta Sans', sans-serif",
-    html: `<span class="flex flex-col leading-tight"><span class="text-3xl font-extrabold">Shareef<span class="${gradText}"> Solutions</span></span><span class="mt-1.5 text-[10px] font-semibold uppercase tracking-[0.35em] opacity-60">Full-Stack Software Agency</span></span>`,
+    html: `<span style="display:flex;flex-direction:column;line-height:1.15"><span style="font-size:30px;font-weight:800">Shareef<span class="${gradText}"> Solutions</span></span><span style="margin-top:6px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.35em;opacity:0.6">Full-Stack Software Agency</span></span>`,
   },
   {
     name: "T · Tech lowercase",
     desc: "Lowercase, domain-style — Space Grotesk. Modern startup feel.",
     font: "'Space Grotesk', sans-serif",
-    html: `<span class="text-3xl font-medium lowercase tracking-tight">shareef<span class="${gradText}">.solutions</span></span>`,
+    html: `<span style="font-size:30px;font-weight:500;text-transform:lowercase;letter-spacing:-0.01em">shareef<span class="${gradText}">.solutions</span></span>`,
   },
   {
     name: "U · Dot separator",
     desc: "A gradient dot between the words — Poppins.",
     font: "'Poppins', sans-serif",
-    html: `<span class="text-3xl font-bold">Shareef <span class="${gradText}">• Solutions</span></span>`,
+    html: `<span style="font-size:30px;font-weight:700">Shareef <span class="${gradText}">• Solutions</span></span>`,
   },
   {
     name: "V · Initials + wordmark",
     desc: "Gradient “SS” paired with a small stacked wordmark — Sora.",
     font: "'Sora', sans-serif",
-    html: `<span class="flex items-center gap-3"><span class="text-4xl font-extrabold tracking-tighter ${gradText}">SS</span><span class="flex flex-col leading-none"><span class="text-base font-bold tracking-[0.15em]">SHAREEF</span><span class="mt-1 text-base font-bold tracking-[0.15em] ${gradText}">SOLUTIONS</span></span></span>`,
+    html: `<span style="display:flex;align-items:center;gap:12px"><span class="${gradText}" style="font-size:36px;font-weight:800;letter-spacing:-0.03em">SS</span><span style="display:flex;flex-direction:column;line-height:1"><span style="font-size:16px;font-weight:700;letter-spacing:0.15em">SHAREEF</span><span class="${gradText}" style="margin-top:4px;font-size:16px;font-weight:700;letter-spacing:0.15em">SOLUTIONS</span></span></span>`,
   },
 ];
 ---
