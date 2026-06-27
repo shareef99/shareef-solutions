@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Shareef Solutions">
+  <defs>
+    <linearGradient id="g" x1="0" y1="64" x2="64" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#16a34a" />
+      <stop offset="1" stop-color="#34d399" />
+    </linearGradient>
+  </defs>
+  <g fill="url(#g)">
+    <circle cx="32" cy="12" r="3.6" />
+    <circle cx="23" cy="21" r="3.6" />
+    <circle cx="32" cy="21" r="3.6" />
+    <circle cx="41" cy="21" r="3.6" />
+    <circle cx="14" cy="30" r="3.6" />
+    <circle cx="23" cy="30" r="3.6" />
+    <circle cx="32" cy="30" r="3.6" />
+    <circle cx="41" cy="30" r="3.6" />
+    <circle cx="50" cy="30" r="3.6" />
+    <circle cx="32" cy="39" r="3.6" />
+    <circle cx="32" cy="48" r="3.6" />
+  </g>
+</svg>

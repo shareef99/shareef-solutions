@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Shareef Solutions">
+  <!-- Isometric block in layered greens (emerald top → green sides) -->
+  <path d="M32 12 L52 23 L32 34 L12 23 Z" fill="#34d399" />
+  <path d="M12 23 L32 34 L32 52 L12 41 Z" fill="#15803d" />
+  <path d="M52 23 L32 34 L32 52 L52 41 Z" fill="#16a34a" />
+</svg>
