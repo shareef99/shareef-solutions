@@ -1,0 +1,78 @@
+---
+const navLinks = [
+  { label: "Home", href: "#home" },
+  { label: "Services", href: "#services" },
+  { label: "About", href: "#about" },
+  { label: "Contact", href: "#contact" },
+];
+
+const legalLinks = [
+  { label: "Support", to: "/support" },
+  { label: "Terms of Service", to: "/terms" },
+  { label: "Privacy Policy", to: "/privacy" },
+  { label: "Refund Policy", to: "/refund-policy" },
+];
+
+const year = new Date().getFullYear();
+---
+
+<footer
+  class="border-t border-gray-200 bg-gray-50 dark:border-gray-800 dark:bg-gray-900"
+>
+  <div class="mx-auto max-w-7xl px-6 py-12">
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-3">
+      <div>
+        <p class="text-xl font-bold text-gray-900 dark:text-white">
+          Shareef<span class="text-green-600"> Solutions</span>
+        </p>
+        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">
+          Full-stack software agency building powerful digital solutions.
+        </p>
+      </div>
+
+      <div>
+        <p class="text-sm font-semibold text-gray-900 dark:text-white">
+          Navigation
+        </p>
+        <div class="mt-3 flex flex-col gap-2">
+          {
+            navLinks.map((link) => (
+              <a
+                href={link.href}
+                class="text-sm text-gray-600 transition-colors hover:text-green-600 dark:text-gray-400 dark:hover:text-green-400"
+              >
+                {link.label}
+              </a>
+            ))
+          }
+        </div>
+      </div>
+
+      <div>
+        <p class="text-sm font-semibold text-gray-900 dark:text-white">
+          Legal
+        </p>
+        <div class="mt-3 flex flex-col gap-2">
+          {
+            legalLinks.map((link) => (
+              <a
+                href={link.to}
+                class="text-sm text-gray-600 transition-colors hover:text-green-600 dark:text-gray-400 dark:hover:text-green-400"
+              >
+                {link.label}
+              </a>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="mt-10 border-t border-gray-200 pt-8 text-center dark:border-gray-800"
+    >
+      <p class="text-sm text-gray-500 dark:text-gray-500">
+        &copy; {year} Shareef Solutions. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
