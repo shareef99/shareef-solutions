@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Shareef Solutions">
+  <defs>
+    <linearGradient id="g" x1="0" y1="64" x2="64" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#16a34a" />
+      <stop offset="1" stop-color="#34d399" />
+    </linearGradient>
+  </defs>
+  <path d="M32 5 L55 18.5 V45.5 L32 59 L9 45.5 V18.5 Z" fill="none" stroke="url(#g)" stroke-width="4" stroke-linejoin="round" />
+  <path d="M32 20 L43 32 H36.5 V45 H27.5 V32 H21 Z" fill="url(#g)" />
+</svg>
